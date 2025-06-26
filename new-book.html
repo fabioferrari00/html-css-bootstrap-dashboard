@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/duck.png" alt="" width="60"></a>
+        <button class="navbar-toggler text-secondary" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="#">Catalogo libri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anagrafica utenti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Storico prestiti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+            <button type="button" class="btn btn-outline-secondary">Cerca</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="my-4">Nuovo libro</h1>
+          <form action="" method="post">
+            <div class="row">
+              <div class="col-6">
+                <div class="mb-2">
+                  <label class="form-label fw-bold" for="nome-autore">Nome Autore</label>
+                  <input class="form-control" type="text" name="nome-autore" id="" required
+                    placeholder="Cognome autore">
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mb-2">
+                  <label class="form-label fw-bold" for="cognome-autore">Cognome autore</label>
+                  <input class="form-control" type="text" name="cognome-autore" id="" required
+                    placeholder="Cognome autore">
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="mb-2">
+                  <label class="form-label fw-bold" for="titolo">Titolo</label>
+                  <input class="form-control mb-2" type="text" name="titolo" id="" required
+                    placeholder="Inserisci il titolo del libro">
+                  <span class="text-secondary">Titolo versione italiana</span>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="mb-2">
+                  <label class="form-label fw-bold" for="genere">Genere</label>
+                  <select class="form-select" name="genere" id="">
+                    <option value="">Seleziona genere</option>
+                    <option value="thriller">Thriller</option>
+                    <option value="giallo">Giallo</option>
+                    <option value="azione">Azione</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="fantascienza">Fantascienza</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="mb-2">
+                  <label class="form-label fw-bold" for="anno-pubblicazione">Anno di pubblicazione</label>
+                  <input class="form-control" type="date" name="anno-pubblicazione" id="" required>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div>
+                  <label class="form-label fw-bold" for="isbn">ISBN#</label>
+                  <input class="form-control" type="text" name="isbn" id="" required
+                    placeholder="Inserisci il codice ISBN#">
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="col-12">
+                <div class="mb-4">
+                  <label class="form-label fw-bold" for="">Note</label>
+                  <textarea class="form-control" name="note" id=""
+                    placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="mb-4">
+                  <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" name="disponibile[]" id="" />Disponibile anche su
+                    digitale
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-primary" type="submit">Aggiungi libro</button>
+              </div>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
