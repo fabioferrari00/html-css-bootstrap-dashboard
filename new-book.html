@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Dashboard</title>
+  <title>Nuovo libro</title>
 </head>
 
 <body>
@@ -37,10 +37,6 @@
               <a class="nav-link" href="#">Help</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
-            <button type="button" class="btn btn-outline-secondary">Cerca</button>
-          </form>
         </div>
       </div>
     </nav>
@@ -71,9 +67,9 @@
               <div class="col-12">
                 <div class="mb-2">
                   <label class="form-label fw-bold" for="titolo">Titolo</label>
-                  <input class="form-control mb-2" type="text" name="titolo" id="" required
+                  <input class="form-control" type="text" name="titolo" id="" required
                     placeholder="Inserisci il titolo del libro">
-                  <span class="text-secondary">Titolo versione italiana</span>
+                  <div class="form-text">Titolo versione italiana</div>
                 </div>
               </div>
               <div class="col-12 col-lg-4">
@@ -102,23 +98,23 @@
                     placeholder="Inserisci il codice ISBN#">
                 </div>
               </div>
-              <hr class="my-4">
               <div class="col-12">
+                <hr class="my-4">
                 <div class="mb-4">
                   <label class="form-label fw-bold" for="">Note</label>
-                  <textarea class="form-control" name="note" id=""
-                    placeholder="Inserisci eventuali note sul libro"></textarea>
+                  <textarea class="form-control" name="note" id="" placeholder="Inserisci eventuali note sul libro"
+                    rows="5"></textarea>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-12">
                 <div class="mb-4">
                   <div class="form-check form-check">
-                    <input class="form-check-input" type="checkbox" name="disponibile[]" id="" />Disponibile anche su
-                    digitale
+                    <input class="form-check-input" type="checkbox" name="digitale" id="" />
+                    <label for="digitale" class="form-check-inline">Disponibile
+                      anche su
+                      digitale</label>
                   </div>
                 </div>
-              </div>
-              <div>
                 <button class="btn btn-primary" type="submit">Aggiungi libro</button>
               </div>
           </form>
